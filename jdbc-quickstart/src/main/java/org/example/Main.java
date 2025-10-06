@@ -8,7 +8,9 @@ import java.sql.Statement;
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         // 1. 注册驱动
-        Class.forName("com.mysql.cj.jdbc.Driver");
+        // MySQL 5之后的版本可以省略这个注册驱动的步骤
+        // 将自动加载jar包中META-INF/services/java.sql.Driver文件中的驱动类
+        // Class.forName("com.mysql.cj.jdbc.Driver");
 
         // 2. 获取连接
         String url = "jdbc:mysql://127.0.0.1:3306/db_java_web";
