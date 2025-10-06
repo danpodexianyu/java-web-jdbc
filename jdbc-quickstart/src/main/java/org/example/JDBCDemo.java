@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Main {
+public class JDBCDemo {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         // 1. 注册驱动
         // MySQL 5之后的版本可以省略这个注册驱动的步骤
