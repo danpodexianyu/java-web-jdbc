@@ -13,7 +13,7 @@ class JDBCDemo3ConnectionTest {
     void testTransaction() throws SQLException {
         String url = "jdbc:mysql:///db_java_web";
         String username = "root";
-        String password = "%9Yhrk2jBrPQ8YE@";
+        String password = "123456";
         Connection conn = DriverManager.getConnection(url, username, password);
 
         String sql = "UPDATE account SET money = 4000 where id = 1";
